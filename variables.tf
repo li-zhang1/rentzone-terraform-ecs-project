@@ -49,3 +49,31 @@ variable "private_data_subnet_az2_cidr" {
   description = "private data subnet az2 cidr block"
   type        = string
 }
+
+# security groups variables
+variable "ssh_location" {
+  description = "ip address that can ssh into the server."
+  type        = string
+}
+
+
+# rds variables
+variable "database_snapshot_identifier" {
+  description = "database snapshot name"
+  type        = string
+}
+
+variable "database_instance_class" {
+  description = "database instance type"
+  type        = string
+}
+
+variable "database_instance_identifier" {
+  description = "database instance identifier"
+  type        = string
+}
+
+variable "milti_az_deployment" {
+  description = "create a standby db instance"
+  type        = bool
+}
