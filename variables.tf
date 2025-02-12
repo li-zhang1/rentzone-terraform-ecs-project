@@ -90,10 +90,10 @@ variable "alternative_names" {
 }
 
 # application load balancer variables
-variable "ssl_certificate_arn" {
-  description = "ssl certificate arn"
-  type        = string
-}
+# variable "ssl_certificate_arn" {
+#   description = "ssl certificate arn"
+#   type        = string
+# }
 
 # s3 variables
 variable "env_file_bucket_name" {
